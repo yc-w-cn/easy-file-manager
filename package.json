@@ -1,30 +1,61 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "@yc-w-cn/easy-file-manager",
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "lint": "eslint -c .eslintrc --ext .ts ./src",
-    "start": "npm run build && electron ./dist/main.js"
-  },
-  "repository": "https://github.com/electron/electron-quick-start-typescript",
+  "main": "./out/main/index.js",
+  "description": "A user-friendly solution for efficient file management. Seamlessly scan and store files in a local database, making retrieval and organization a breeze. Simplify your document workflow with our intuitive system designed to enhance your user experience.",
+  "repository": "https://github.com/yc-w-cn/easy-file-manager",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo",
+    "electron",
+    "easy-file-manager",
     "typescript"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "electron": "^24.3.0",
-    "eslint": "^7.32.0",
-    "typescript": "^4.8.3"
+  "author": "Yuchen Wang <contact@wangyuchen.cn>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "pnpm run typecheck:node && npm run typecheck:web",
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "pnpm run typecheck && electron-vite build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:win": "pnpm run build && electron-builder --win --config",
+    "build:mac": "electron-vite build && electron-builder --mac --config",
+    "build:linux": "electron-vite build && electron-builder --linux --config"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@electron-toolkit/preload": "^2.0.0",
+    "@electron-toolkit/utils": "^2.0.0",
+    "electron-updater": "^6.1.1",
+    "rxdb": "^14.17.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@ant-design/colors": "^7.0.0",
+    "@ant-design/icons": "^5.2.6",
+    "@electron-toolkit/eslint-config-prettier": "^1.0.1",
+    "@electron-toolkit/eslint-config-ts": "^1.0.0",
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@remix-run/router": "^1.11.0",
+    "@types/node": "^18.17.5",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "antd": "^5.11.1",
+    "dayjs": "^1.11.10",
+    "electron": "^25.6.0",
+    "electron-builder": "^24.6.3",
+    "electron-vite": "^1.0.27",
+    "eslint": "^8.47.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
+    "rxdb-hooks": "^5.0.2",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
 }
