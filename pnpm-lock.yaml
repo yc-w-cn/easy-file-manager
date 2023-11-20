@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^24.6.3
     version: 24.6.4
   electron-vite:
-    specifier: ^1.0.27
-    version: 1.0.28(vite@4.5.0)
+    specifier: ^1.0.29
+    version: 1.0.29(vite@4.5.0)
   eslint:
     specifier: ^8.47.0
     version: 8.53.0
@@ -1861,6 +1861,7 @@ packages:
   /@xmldom/xmldom@0.8.10:
     resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
     engines: {node: '>=10.0.0'}
+    requiresBuild: true
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.2):
@@ -2742,8 +2743,8 @@ packages:
       - supports-color
     dev: false
 
-  /electron-vite@1.0.28(vite@4.5.0):
-    resolution: {integrity: sha512-cp7nBi6do/jn5SHdL2V71WjxqZ+NXitVqn5bW+TsTEYgAfSUuYYp6INJN854kcgoOj4UrjMqA9cGRTSl79xx0Q==}
+  /electron-vite@1.0.29(vite@4.5.0):
+    resolution: {integrity: sha512-BDTmVTLIri8W4Lz1tn5RAV1slSTinBBb6G77+qKcjkF0vEwdiUp2ntSU6FDqwP9pmy1t96U1CZqIYIStF8H6Jw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6137,6 +6138,7 @@ packages:
   /xmlbuilder@15.1.1:
     resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
     engines: {node: '>=8.0'}
+    requiresBuild: true
     dev: true
 
   /xmlhttprequest-ssl@2.0.0:
