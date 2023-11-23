@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@electron-toolkit/preload':
     specifier: ^2.0.0
-    version: 2.0.0(electron@25.9.4)
+    version: 2.0.0(electron@27.1.2)
   '@electron-toolkit/utils':
     specifier: ^2.0.0
-    version: 2.0.1(electron@25.9.4)
+    version: 2.0.1(electron@27.1.2)
   electron-updater:
     specifier: ^6.1.1
     version: 6.1.4
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^1.11.10
     version: 1.11.10
   electron:
-    specifier: ^25.6.0
-    version: 25.9.4
+    specifier: ^27.1.2
+    version: 27.1.2
   electron-builder:
     specifier: ^24.6.3
     version: 24.6.4
@@ -464,12 +464,12 @@ packages:
       - supports-color
     dev: true
 
-  /@electron-toolkit/preload@2.0.0(electron@25.9.4):
+  /@electron-toolkit/preload@2.0.0(electron@27.1.2):
     resolution: {integrity: sha512-zpZDzbqJTZQC5d4LRs2EKruKWnqah+T75s+niBYFemYLtiW5TTZcWi3Q8UxHqnwTudDMuWJb233aaS2yjx3Xiw==}
     peerDependencies:
       electron: '>=13.0.0'
     dependencies:
-      electron: 25.9.4
+      electron: 27.1.2
     dev: false
 
   /@electron-toolkit/tsconfig@1.0.1(@types/node@18.18.9):
@@ -480,12 +480,12 @@ packages:
       '@types/node': 18.18.9
     dev: true
 
-  /@electron-toolkit/utils@2.0.1(electron@25.9.4):
+  /@electron-toolkit/utils@2.0.1(electron@27.1.2):
     resolution: {integrity: sha512-3nnjd3D1NIjxdzNrvR5fkJ3kbJNbRkpHppv0/pSbMX6I0DaBzpPXeSfDYuJJKzZrAc3CmGcJa0MU4+AjEOlT4g==}
     peerDependencies:
       electron: '>=13.0.0'
     dependencies:
-      electron: 25.9.4
+      electron: 27.1.2
     dev: false
 
   /@electron/asar@3.2.8:
@@ -1861,6 +1861,7 @@ packages:
   /@xmldom/xmldom@0.8.10:
     resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
     engines: {node: '>=10.0.0'}
+    requiresBuild: true
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.2):
@@ -2764,8 +2765,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron@25.9.4:
-    resolution: {integrity: sha512-5pDU8a7o7ZIPTZHAqjflGMq764Favdsc271KXrAT3oWvFTHs5Ve9+IOt5EUVPrwvC2qRWKpCIEM47WzwkTlENQ==}
+  /electron@27.1.2:
+    resolution: {integrity: sha512-Dy6BUuGLiIJv+zfsXwr78TV2TNppi24rXF4PIIS+OjDblEKdkI9r1iM8JUd3/x3sbGUy5mdLMSPhvmu//IhkgA==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -6137,6 +6138,7 @@ packages:
   /xmlbuilder@15.1.1:
     resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
     engines: {node: '>=8.0'}
+    requiresBuild: true
     dev: true
 
   /xmlhttprequest-ssl@2.0.0:
