@@ -41,7 +41,7 @@
     "@remix-run/router": "^1.11.0",
     "@types/node": "^18.17.5",
     "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
+    "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.0.4",
     "antd": "^5.11.1",
     "dayjs": "^1.11.10",
