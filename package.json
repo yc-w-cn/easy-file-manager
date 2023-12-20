@@ -35,7 +35,7 @@
   "devDependencies": {
     "@ant-design/colors": "^7.0.0",
     "@ant-design/icons": "^5.2.6",
-    "@electron-toolkit/eslint-config-prettier": "^1.0.1",
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
     "@electron-toolkit/eslint-config-ts": "^1.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@remix-run/router": "^1.11.0",
