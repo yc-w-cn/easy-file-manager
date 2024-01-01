@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@ant-design/colors':
-    specifier: ^7.0.0
-    version: 7.0.0
+    specifier: ^7.0.1
+    version: 7.0.1
   '@ant-design/icons':
     specifier: ^5.2.6
     version: 5.2.6(react-dom@18.2.0)(react@18.2.0)
@@ -114,10 +114,10 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@ant-design/colors@7.0.0:
-    resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
+  /@ant-design/colors@7.0.1:
+    resolution: {integrity: sha512-SrZBQcrXNmrH8TJPXZReYcXs4jSqkwNS3EEhpN6esBI9sNX70g5LZP05/uSPjflkIt2orvjivQ/ywVBqTbHZ+A==}
     dependencies:
-      '@ctrl/tinycolor': 3.6.1
+      '@ctrl/tinycolor': 4.0.2
     dev: true
 
   /@ant-design/cssinjs@1.17.2(react-dom@18.2.0)(react@18.2.0):
@@ -148,7 +148,7 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@ant-design/colors': 7.0.0
+      '@ant-design/colors': 7.0.1
       '@ant-design/icons-svg': 4.3.1
       '@babel/runtime': 7.23.2
       classnames: 2.3.2
@@ -423,6 +423,11 @@ packages:
   /@ctrl/tinycolor@3.6.1:
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /@ctrl/tinycolor@4.0.2:
+    resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
+    engines: {node: '>=14'}
     dev: true
 
   /@develar/schema-utils@2.6.5:
@@ -1861,6 +1866,7 @@ packages:
   /@xmldom/xmldom@0.8.10:
     resolution: {integrity: sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==}
     engines: {node: '>=10.0.0'}
+    requiresBuild: true
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.2):
@@ -1934,7 +1940,7 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
-      '@ant-design/colors': 7.0.0
+      '@ant-design/colors': 7.0.1
       '@ant-design/cssinjs': 1.17.2(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/icons': 5.2.6(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/react-slick': 1.0.2(react@18.2.0)
@@ -6137,6 +6143,7 @@ packages:
   /xmlbuilder@15.1.1:
     resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
     engines: {node: '>=8.0'}
+    requiresBuild: true
     dev: true
 
   /xmlhttprequest-ssl@2.0.0:
